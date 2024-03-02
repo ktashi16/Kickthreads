@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>BMCC Electronics</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <script src="js/cookiemanager.js"></script>
+  <script src="js/Login.js"></script>
+  <script>
+    function register()
+    {
+        let x=new Login();
+        if(x.register(userid.value,password.value)==true)
+        {
+            message.innerHTML="REGISTRAION SUCCESSFUL";
+        }
+        else
+        {
+            message.innerHTML="USER ALREADY EXISTS";
+        }
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Kick <span class="logo_colour">Threads</span></a></h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <script src="js/menu.js"></script>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h1>Latest News</h1>
+        <h4>New Website Launched</h4>
+        <h5>December 18th, 2023</h5>
+        <p>2023 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="contact.html">Read more</a></p>
+        <h1>Useful Links</h1>
+        <ul>
+          <li><a href="https://www.premierleague.com/tables"style=color:purple>Premier League</a></li>
+          <li><a href="https://www.laliga.com/en-GB/laliga-easports/standing"style=color:purple>LaLiga</a></li>
+          <li><a href="https://www.bundesliga.com/en/bundesliga/table"style=color:purple>Bundesliga</a></li>
+          <li><a href="https://www.legaseriea.it/en"style=color:purple>Serie A</a></li>
+        </ul>
+        <h1>Search</h1>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <h1>Registration</h1>
+        <p>Please register below</p>
+        <form>
+          <div class="form_settings">
+            <p><span>Userid:</span><input class="contact" type="text"  value="" id="userid"/></p>
+            <p><span>Password:</span><input class="contact" type="text"  value="" id="password"/></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="button"  value="submit" onclick="register();"/></p>
+            <a href="login.html">LOGIN</a>
+          </div>
+        </form>
+        <p><br /><br /><div id="message"></div></p>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a></p>
+      <p>Copyright &copy; simplestyle_5 | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+<div style="text-align: center; font-size: 0.75em;">Design downloaded from <a href="http://www.freewebtemplates.com/">free website templates</a>.</div></body>
+</html>
